@@ -9,52 +9,61 @@
 </head>
 
 <body>
-
-    <form class="form">
-        <span class="input-span">
-            <label for="nome" class="label">Nome</label>
-            <input type="text" name="nome" id="nome"></span>
-
-        <span class="input-span">
-            <label for="cep" class="label">Cep</label>
-            <input type="text" name="cep" id="cep"></span>
-
-        <span class="input-span">
-            <label for="rua" class="label">Rua</label>
-            <input type="text" name="rua" id="rua"></span>
-
-        <span class="input-span">
-            <label for="bairro" class="label">Bairro</label>
-            <input type="text" name="bairro" id="bairro"></span>
-
-        <span class="input-span">
-            <label for="estado" class="label">Estado</label>
-            <input type="text" name="estado" id="estado"></span>
-
-        <span class="input-span">
-            <label for="cidade" class="label">Cidade</label>
-            <input type="text" name="cidade" id="cidade"></span>
-
-        <span class="input-span">
-            <label for="email" class="label">Email</label>
-            <input type="email" name="email" id="email"></span>
-
-        <button id="cadastrar" onclick="verificar()">
-            Cadastro            
-        </button>
+    <div class="container">
 
 
+        <form class="form">
+            <span class="input-span">
+                <label for="nome" class="label">Nome</label>
+                <input type="text" name="nome" id="nome"></span>
+
+            <span class="input-span">
+                <label for="cep" class="label">Cep</label>
+                <input type="text" name="cep" id="cep"></span>
+
+            <span class="input-span">
+                <label for="rua" class="label">Rua</label>
+                <input type="text" name="rua" id="rua"></span>
+
+            <span class="input-span">
+                <label for="bairro" class="label">Bairro</label>
+                <input type="text" name="bairro" id="bairro"></span>
+
+            <span class="input-span">
+                <label for="estado" class="label">Estado</label>
+                <input type="text" name="estado" id="estado"></span>
+
+            <span class="input-span">
+                <label for="cidade" class="label">Cidade</label>
+                <input type="text" name="cidade" id="cidade"></span>
+
+            <span class="input-span">
+                <label for="email" class="label">Email</label>
+                <input type="email" name="email" id="email"></span>
+
+            <button id="cadastrar" onclick="limpaForm()">
+                Cadastro
+            </button>
 
 
-        
-       
 
-    </form>
+
+
+
+
+        </form>
+    </div>
 
 </body>
 
-<script src="/JS/FORM.JS">
+<script src="/JS/FORM.JS"></script>
+<script src="/JS/cep.js"></script>
+<script src="/JS/limpa.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+    integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-</script>
+<script>   $('#cep').mask('00000-000'); </script>
 
 </html>
