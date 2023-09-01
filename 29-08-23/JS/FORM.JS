@@ -35,7 +35,4 @@ function cadastrar() {
    if (email == "") {
       alert('Campo com preenchimento obrigatório');
    }
-
-
-
 }

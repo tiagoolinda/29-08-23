@@ -39,11 +39,15 @@ const preencherFormulario = (endereco) => {
     document.getElementById('cep').value = endereco.cep;
 
 
-if(endereco.erro == 'true'){
+if(endereco.erro){
     alert("CEP Incorreto");
     limpaForm();
+    Document.getElementById('cep').value="";
     document.getElementById('cep').focus();
-}
+    }
+    else{
+        preencherFormulario(endereco);
+    }
 }
 
 document.getElementById('cep')
